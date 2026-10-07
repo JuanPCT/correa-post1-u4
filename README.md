@@ -20,7 +20,7 @@ mvn test
 | Notificar cambios a correo, tablero y auditoría | Observer | `OrderEventPublisher` permite suscribir y retirar observadores sin codificar destinatarios en el emisor. |
 | Operaciones válidas según ciclo de vida | State | Los objetos Pending, Paid, Shipped, Delivered y Cancelled permiten solo transiciones legales. Strategy cambia un algoritmo; no expresa transiciones persistentes. |
 
-El undo solo revierte el último comando de cada solicitud, respetando el orden causal. Un cambio inválido en State no publica evento. `docs/` no es necesario para ejecutar el ejemplo: el README y las pruebas describen los límites de cada patrón.
+El undo solo revierte el último comando de cada solicitud, respetando el orden causal. Un cambio inválido en State no publica evento. El README y las pruebas describen los límites de cada patrón.
 
 ## Pruebas
 
